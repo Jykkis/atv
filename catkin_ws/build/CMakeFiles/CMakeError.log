@@ -1,0 +1,167 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2974014501/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2974014501.dir/build.make CMakeFiles/cmTryCompileExec2974014501.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2974014501.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2974014501.dir/CheckSymbolExists.c.o   -c /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2974014501
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2974014501.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2974014501.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2974014501 -rdynamic 
+CMakeFiles/cmTryCompileExec2974014501.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2974014501] Error 1
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2974014501/fast] Error 2
+
+File /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2539475711/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2539475711.dir/build.make CMakeFiles/cmTryCompileExec2539475711.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2539475711.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2539475711.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2539475711
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2539475711.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2539475711.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2539475711 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2539475711] Error 1
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2539475711/fast] Error 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec915595341/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec915595341.dir/build.make CMakeFiles/cmTryCompileExec915595341.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec915595341.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec915595341.dir/CheckSymbolExists.cxx.o -c /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec915595341.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec915595341/fast] Error 2
+
+File /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3715273391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3715273391.dir/build.make CMakeFiles/cmTryCompileExec3715273391.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3715273391.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3715273391.dir/CheckSymbolExists.cxx.o -c /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec3715273391.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3715273391/fast] Error 2
+
+File /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3747915569/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3747915569.dir/build.make CMakeFiles/cmTryCompileExec3747915569.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3747915569.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3747915569.dir/CheckSymbolExists.cxx.o -c /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3747915569.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec3747915569/fast] Error 2
+
+File /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1661961186/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1661961186.dir/build.make CMakeFiles/cmTryCompileExec1661961186.dir/build
+make[1]: Entering directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1661961186.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec1661961186.dir/CheckIncludeFile.cxx.o -c /home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: No such file or directory
+ #include <pgm.h>
+                 ^
+compilation terminated.
+make[1]: Leaving directory `/home/atv/atv-project-2017/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1661961186.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTryCompileExec1661961186/fast] Error 2
+
+

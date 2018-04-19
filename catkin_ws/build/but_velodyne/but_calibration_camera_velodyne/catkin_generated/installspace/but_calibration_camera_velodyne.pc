@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: but_calibration_camera_velodyne
+Description: Description of but_calibration_camera_velodyne
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: std_msgs

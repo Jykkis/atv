@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: robot_pose_ekf
+Description: Description of robot_pose_ekf
+Version: 1.13.1
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: roscpp

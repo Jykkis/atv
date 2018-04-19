@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libmap_server_image_loader.so -o /home/atv/atv-project-2017/catkin_ws/devel/lib/libmap_server_image_loader.so CMakeFiles/map_server_image_loader.dir/src/image_loader.cpp.o -lSDL -lSDL_image -lboost_system 

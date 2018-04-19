@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/atv/atv-project-2017/catkin_ws/install/setup.sh

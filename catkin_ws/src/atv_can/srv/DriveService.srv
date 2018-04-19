@@ -1,0 +1,8 @@
+int16 motor_control
+uint16 turning_radius
+uint8 gear_ratio
+uint8 all_wheel_drive
+bool control_mode
+bool direction
+---
+string status

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+    <group ns="basler">
+    <include file="$(find polaris)/config/pylon_camera.launch">
+      <arg name="config_file" value="$(find polaris)/config/pylon_default.yaml" />
+    </include>
+  </group>
+    <node pkg="cata2pano" type="cata2pano_node" name="cata2pano_node" output="screen">
+    </node>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: atv_can
+Description: Description of atv_can
+Version: 0.0.0
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: message_runtime roscpp rospy std_msgs

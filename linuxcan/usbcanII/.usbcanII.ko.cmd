@@ -1,0 +1,1 @@
+cmd_/home/atv/atv-project-2016/linuxcan/usbcanII/usbcanII.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/atv/atv-project-2016/linuxcan/usbcanII/usbcanII.ko /home/atv/atv-project-2016/linuxcan/usbcanII/usbcanII.o /home/atv/atv-project-2016/linuxcan/usbcanII/usbcanII.mod.o

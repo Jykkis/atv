@@ -1,0 +1,1 @@
+cmd_/home/atv/atv-project-2016/linuxcan/pcican2/kvpcicanII.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/atv/atv-project-2016/linuxcan/pcican2/kvpcicanII.ko /home/atv/atv-project-2016/linuxcan/pcican2/kvpcicanII.o /home/atv/atv-project-2016/linuxcan/pcican2/kvpcicanII.mod.o

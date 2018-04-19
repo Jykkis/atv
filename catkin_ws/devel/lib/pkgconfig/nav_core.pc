@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: nav_core
+Description: Description of nav_core
+Version: 1.13.1
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/src/navigation-jade-devel/nav_core/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib 
+Requires: std_msgs geometry_msgs tf costmap_2d

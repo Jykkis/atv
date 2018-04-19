@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="duration" default="90s" />
+  <group ns="novatel">
+    <include file="$(find polaris)/config/novatel.launch">
+      <arg name="port" value="/dev/novatel_gps" />
+      <arg name="span_default_logs_period" value="0.5" />
+      <arg name="log_commands" value="BESTLEVERARMB ONCE" /> <!-- Contains the IMU->Antenna offset -->
+    </include>
+
+    <!-- Create base_footprint, base_stabilized and base_link frames -->
+    <!--node pkg="message_to_tf" type="message_to_tf" name="message_to_tf">
+      <param name="odometry_topic" value="/gps_odom" />
+    </node-->
+  </group>
+
+  <group ns="velodyne">
+    <include file="$(find polaris)/config/velodyne_pointcloud.launch">
+      <arg name="calibration" value="$(find polaris)/config/velodyne_calibration.yaml" />
+    </include>
+  </group>
+
+  <group ns="lidar2scan">
+    <remap from="cloud_in" to="/velodyne/velodyne_points" />
+    <include file="$(find polaris)/config/lidar2scan.launch" />
+  </group>
+
+  <group ns="hector_mapping">
+    <remap from="scan" to="/lidar2scan/scan" />
+    <include file="$(find polaris)/config/hector_mapping.launch">
+    </include>
+  </group>
+
+  <node name="rosbag_record" pkg="rosbag" type="record"
+    args="-a -o /tmp/ --duration $(arg duration)" />
+</launch>

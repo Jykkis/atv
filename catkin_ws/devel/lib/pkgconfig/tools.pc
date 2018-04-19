@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: tools
+Description: Description of tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib 
+Requires: joy roscpp rospy std_msgs message_runtime

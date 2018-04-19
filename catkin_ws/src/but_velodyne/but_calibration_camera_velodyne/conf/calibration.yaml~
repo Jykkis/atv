@@ -1,0 +1,6 @@
+but_calibration_camera_velodyne:
+  camera_frame_topic: /basler/pylon_camera_node/panorama
+  camera_info_topic: /basler/pylon_camera_node/camera_info
+  marker: {circles_distance: 0.23, circles_radius: 0.0825}
+  velodyne_topic: /velodyne/velodyne_points
+

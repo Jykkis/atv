@@ -1,0 +1,1 @@
+cmd_/home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.o := ld -m elf_x86_64   -r -o /home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.o /home/atv/atv-project-2016/linuxcan/virtualcan/virtualcan.o 

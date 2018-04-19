@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: tf2_eigen
+Description: Description of tf2_eigen
+Version: 0.5.13
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: 

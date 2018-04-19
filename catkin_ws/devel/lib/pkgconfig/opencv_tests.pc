@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: opencv_tests
+Description: Description of opencv_tests
+Version: 1.12.4
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib 
+Requires: 

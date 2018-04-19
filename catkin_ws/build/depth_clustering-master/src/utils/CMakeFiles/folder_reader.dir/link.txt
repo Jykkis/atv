@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11 -fPIC -Wall  -Wno-deprecated -O3 -DNDEBUG    -shared -Wl,-soname,libfolder_reader.so -o /home/atv/atv-project-2017/catkin_ws/devel/lib/libfolder_reader.so CMakeFiles/folder_reader.dir/folder_reader.cpp.o -lboost_filesystem -lboost_regex 

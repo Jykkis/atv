@@ -1,0 +1,33 @@
+
+
+#ifndef POLARIS_KINEMATICS
+#define POLARIS_KINEMATICS
+
+#include <geometry_msgs/Pose.h>
+#include <atv_can/OdometryMeasurement.h>
+#include <atv_can/SteeringMeasurement.h>
+
+geometry_msgs::Pose dead_reckoning(geometry_msgs::Pose current_pose, double steer_angle, double v, double sample_time);
+
+class KinematicsNode
+{
+public:
+
+KinematicsNode();
+
+void odometry_measurement_callback(const atv_can::OdometryMeasurement& measurement);
+void steering_angle_callback(const atv_can::SteeringMeasurement& measurement);
+
+private:
+
+double average_velocity(const atv_can::OdometryMeasurement& measurement);
+void update_state();
+
+bool is_measurements_received();
+
+geometry_msgs::Pose state;
+ros::Subscriber odometry_measurement_subscriber;
+
+};
+#endif 
+

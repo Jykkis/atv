@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/utils/./folder_reader.h
+boost/algorithm/string/predicate.hpp
+-
+boost/range/iterator_range_core.hpp
+-
+boost/filesystem.hpp
+-
+boost/regex.hpp
+-
+stdio.h
+-
+string
+-
+vector
+-
+algorithm
+-
+
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/utils/folder_reader.cpp
+./folder_reader.h
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/utils/./folder_reader.h
+algorithm
+-
+string
+-
+vector
+-
+

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="atv_can" type="can_node" name="atv_can" output="screen">
+  </node>
+
+</launch>

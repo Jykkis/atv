@@ -1,0 +1,1 @@
+cmd_/home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.ko /home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.o /home/atv/atv-project-2016/linuxcan/virtualcan/kvvirtualcan.mod.o

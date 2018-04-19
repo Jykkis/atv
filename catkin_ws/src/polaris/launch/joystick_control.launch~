@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+  <group ns="can">
+    <include file="$(find polaris)/config/atv_can.launch" />
+
+    <include file="$(find polaris)/config/joy.launch" />
+    <node pkg="tools" type="teleop_joy" name="tools" output="screen">
+    </node>
+  </group>
+
+</launch>

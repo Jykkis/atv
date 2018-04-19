@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: polaris_kinematics
+Description: Description of polaris_kinematics
+Version: 0.0.0
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/src/polaris_kinematics/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib -lpolaris_kinematics
+Requires: roscpp std_msgs atv_can atv_can

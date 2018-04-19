@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/communication/identifiable.cpp
+communication/identifiable.h
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/communication/communication/identifiable.h
+string
+-
+
+/home/atv/atv-project-2017/catkin_ws/src/depth_clustering-master/src/communication/identifiable.h
+cxxabi.h
+-
+string
+-
+cstdlib
+-
+

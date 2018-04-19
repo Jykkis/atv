@@ -1,0 +1,6 @@
+#!/bin/sh
+
+apt-get install dkms
+dpkg --force-all -i ngpsusb.deb
+cp /usr/share/ngpsusb-1.1.0/77-mm-blacklists.rules /etc/udev/rules.d/
+udevadm control --reload-rules

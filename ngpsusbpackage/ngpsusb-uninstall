@@ -1,0 +1,6 @@
+#!/bin/sh
+
+dpkg -r ngpsusbpackage
+rm /etc/udev/rules.d/77-mm-blacklists.rules
+
+echo "Please restart the system to completely remove the driver files."

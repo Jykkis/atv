@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+    <node pkg="polaris_kinematics" type="polaris_kinematics_node" name="polaris_kinematics" output="screen">
+        <remap from="~/atv_odometry_measurement" to="/can/atv_odometry_measurement" />
+        <remap from="~/atv_steering_measurement" to="/can/atv_steering_measurement" />
+        <param name="steering_min" value="460000" />
+        <param name="steering_max" value="485000" />
+        <param name="steering_centre" value="478335" />
+        <param name="distance_of_axis" value="1.83" />
+    </node>
+</launch>

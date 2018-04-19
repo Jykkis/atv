@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: polaris
+Description: Description of polaris
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib 
+Requires: 

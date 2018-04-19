@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: dynamicvoronoi
+Description: Description of dynamicvoronoi
+Version: 0.0.0
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/src/dynamicvoronoi-master/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib -ldynamicvoronoi
+Requires: 

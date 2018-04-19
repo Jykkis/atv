@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<!-- Default launch configuration for the Polaris ATV -->
+<launch>
+  <group ns="novatel">
+    <node pkg="tf" type="static_transform_publisher" name="base_link_imu" args="0.95 0 1.673 0 0 0 base_link imu 100" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link_gps" args="0.95 0 1.673 0 0 0 base_link gps 100" />
+
+    <include file="$(find polaris)/config/novatel.launch">
+      <arg name="port" value="/dev/novatel_gps" />
+      <arg name="span_default_logs_period" value="0.1" />
+      <arg name="log_commands" value="BESTLEVERARMB ONCE" /> <!-- Contains the IMU->Antenna offset -->
+    </include>
+
+    <!-- Create base_footprint, base_stabilized and base_link frames -->
+    <!-- <node pkg="message_to_tf" type="message_to_tf" name="message_to_tf">
+      <param name="odometry_topic" value="/robot_localization/odometry/filtered" />
+    </node-->
+  </group>
+
+  <group ns="velodyne">
+    <node pkg="tf" type="static_transform_publisher" name="base_link_velodyne" args="0.95 0 1.8 0 0 0 base_link velodyne_tf 100" />
+    <include file="$(find polaris)/config/velodyne_pointcloud.launch">
+      <arg name="calibration" value="$(find polaris)/config/velodyne_calibration.yaml" />
+      <arg name="frame_id" value="velodyne_tf" />
+    </include>
+  </group>
+
+  <group ns="lidar2scan">
+    <remap from="cloud_in" to="/velodyne/velodyne_points" />
+    <include file="$(find polaris)/config/lidar2scan.launch" />
+  </group>
+
+  <include file="$(find polaris)/config/gmapping.launch" />
+  <include file="$(find polaris)/config/polaris_kinematics.launch" />
+  <include file="$(find polaris)/config/robot_localization.launch" />
+
+  <!--<group ns="hector_mapping">
+    <remap from="scan" to="/lidar2scan/scan" />
+    <include file="$(find polaris)/config/hector_mapping.launch">
+    </include>
+  </group>-->
+
+
+  <group ns="basler">
+    <node pkg="tf" type="static_transform_publisher" name="base_link_basler" args="0.95 0 1.673 3.14 0 0 base_link basler_link 100" />
+    <include file="$(find polaris)/config/pylon_camera.launch">
+      <arg name="config_file" value="$(find polaris)/config/pylon_default.yaml" />
+    </include>
+  </group>
+
+  <group ns="cata2pano">
+    <include file="$(find polaris)/config/cata2pano.launch" />
+  </group>
+
+  <group ns="can">
+    <include file="$(find polaris)/config/atv_can.launch" />
+  </group>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find polaris)/config/rviz_default.rviz" />
+
+</launch>

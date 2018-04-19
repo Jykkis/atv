@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: velodyne_driver
+Description: Description of velodyne_driver
+Version: 1.2.0
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/devel/include -I/home/atv/atv-project-2017/catkin_ws/src/velodyne-master/velodyne_driver/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib -lvelodyne_input
+Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs

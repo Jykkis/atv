@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+    <group ns="robot_localization">
+        <node pkg="tf" type="static_transform_publisher" name="earth_map_tf" args="0 0 0 0 0 0 earth map 100" />
+        <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform">
+            <remap from="imu/data" to="/novatel/imu" />
+            <remap from="gps/fix" to="/gps_fix" />
+	          <remap from="odometry/filtered" to="odometry/filtered" />
+            <param name="broadcast_utm_transform" value="true" />
+            <param name="frequency" value="100" />
+            <param name="zero_altitude" value="true" />
+        </node>
+
+        <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+            <remap from="odometry/kinematic" to="/polaris_kinematics/odometry" />
+            <rosparam command="load" file="$(find polaris)/config/ekf_localization.yaml" />
+        </node>
+    </group>
+</launch>

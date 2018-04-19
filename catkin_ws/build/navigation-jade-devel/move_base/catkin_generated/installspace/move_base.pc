@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: move_base
+Description: Description of move_base
+Version: 1.13.1
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: roscpp dynamic_reconfigure

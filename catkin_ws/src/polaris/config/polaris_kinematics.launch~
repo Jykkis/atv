@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+    <node pkg="polaris_kinematics" type="polaris_kinematics_node" name="polaris_kinematics" output="screen">
+        <remap from="~/atv_odometry_measurement" to="/atv_odometry_measurement" />
+        <remap from="~/atv_steering_measurement" to="/atv_steering_measurement" />
+        <param name="max_steering_radians_left" value="0.484" />
+        <param name="max_steering_radians_right" value="0.352" />
+        <param name="steering_encoder_min" value="10200" />
+        <param name="steering_encoder_max" value="26860" />
+    </node>
+</launch>

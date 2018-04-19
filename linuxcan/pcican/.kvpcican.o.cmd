@@ -1,0 +1,1 @@
+cmd_/home/atv/atv-project-2016/linuxcan/pcican/kvpcican.o := ld -m elf_x86_64   -r -o /home/atv/atv-project-2016/linuxcan/pcican/kvpcican.o /home/atv/atv-project-2016/linuxcan/pcican/PciCanHwIf.o /home/atv/atv-project-2016/linuxcan/pcican/dallas.o 

@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: tf2_py
+Description: Description of tf2_py
+Version: 0.5.13
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: rospy tf2

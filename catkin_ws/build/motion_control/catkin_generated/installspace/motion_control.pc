@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: motion_control
+Description: Description of motion_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: 

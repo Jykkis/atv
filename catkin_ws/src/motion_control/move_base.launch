@@ -1,0 +1,18 @@
+ 
+<launch> 
+	<!--- Run AMCL --> 
+	<include file="$(find motion_control)/amcl.launch" /> 
+	
+	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen"> 	    
+        <remap from="/map" to="/gmapping/map" /> 	
+		<rosparam file="$(find motion_control)/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+		<rosparam file="$(find motion_control)/costmap_common_params.yaml" command="load" ns="local_costmap" /> 
+		<rosparam file="$(find motion_control)/local_costmap_params.yaml" command="load" /> 
+		<rosparam file="$(find motion_control)/global_costmap_params.yaml" command="load" /> 
+		<rosparam file="$(find motion_control)/base_local_planner_params.yaml" command="load" /> 
+		<param name="base_global_planner" type="string" value="navfn/NavfnROS" /> 
+		<param name="conservative_reset_dist" type="double" value="3.0" /> 
+		<param name="controller_frequency" type="double" value="10.0" /> 
+	</node> 
+
+</launch>

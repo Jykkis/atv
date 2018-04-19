@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="rosbag" value="/tmp/2017-05-15-15-24-59.bag" doc="path to rosbag file to play" />
+
+  <node pkg="rosbag" type="play" name="player" args="$(arg rosbag)" />
+
+  <group ns="lidar2scan">
+    <remap from="cloud_in" to="/velodyne/velodyne_points" />
+    <include file="$(find polaris)/config/lidar2scan.launch" />
+  </group>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find polaris)/config/rviz_default.rviz" />
+</launch>

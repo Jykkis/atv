@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: depth_clustering
+Description: Description of depth_clustering
+Version: 1.1.0
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib -lcloud -lidentifiable -lground_remove -ldifference -limage_labeler -lprojections -lros_bridge -lvelodyne_utils -lfolder_reader -lvisualization
+Requires: roscpp sensor_msgs std_msgs nav_msgs message_filters tf

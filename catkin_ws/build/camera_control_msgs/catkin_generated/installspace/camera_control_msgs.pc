@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: camera_control_msgs
+Description: Description of camera_control_msgs
+Version: 0.0.14
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib 
+Requires: actionlib_msgs message_runtime sensor_msgs

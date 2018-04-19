@@ -1,0 +1,39 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/camera_control_msgs_generate_messages_py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesAction.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageActionFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageActionGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesActionGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageActionResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageActionResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesActionFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageAction.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageActionFeedback.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabImagesActionResult.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabAndSaveImageActionGoal.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/_GrabHDRImageAction.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetExposure.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_GetCamProperties.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetGain.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetGamma.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetBrightness.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetBinning.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetBool.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/_SetSleeping.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/msg/__init__.py"
+  "/home/atv/atv-project-2017/catkin_ws/devel/lib/python2.7/dist-packages/camera_control_msgs/srv/__init__.py"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/camera_control_msgs_generate_messages_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

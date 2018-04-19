@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <group ns="depth_clustering">
+        <node pkg="depth_clustering" type="depth_clustering_node" name="depth_clustering">
+        </node>
+
+    </group>
+</launch>

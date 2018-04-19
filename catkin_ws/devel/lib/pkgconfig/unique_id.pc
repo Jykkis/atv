@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: unique_id
+Description: Description of unique_id
+Version: 1.0.5
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/src/unique_identifier-master/unique_id/include -I/usr/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib 
+Requires: uuid_msgs

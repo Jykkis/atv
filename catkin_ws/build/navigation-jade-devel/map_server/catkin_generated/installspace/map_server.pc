@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/install
+
+Name: map_server
+Description: Description of map_server
+Version: 1.13.1
+Cflags: -I/home/atv/atv-project-2017/catkin_ws/install/include
+Libs: -L/home/atv/atv-project-2017/catkin_ws/install/lib -lmap_server_image_loader
+Requires: roscpp tf nav_msgs

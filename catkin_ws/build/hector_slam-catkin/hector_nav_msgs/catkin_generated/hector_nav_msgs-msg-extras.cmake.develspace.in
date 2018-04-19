@@ -1,0 +1,2 @@
+set(hector_nav_msgs_MESSAGE_FILES "")
+set(hector_nav_msgs_SERVICE_FILES "/home/atv/atv-project-2017/catkin_ws/src/hector_slam-catkin/hector_nav_msgs/srv/GetDistanceToObstacle.srv;/home/atv/atv-project-2017/catkin_ws/src/hector_slam-catkin/hector_nav_msgs/srv/GetRecoveryInfo.srv;/home/atv/atv-project-2017/catkin_ws/src/hector_slam-catkin/hector_nav_msgs/srv/GetRobotTrajectory.srv;/home/atv/atv-project-2017/catkin_ws/src/hector_slam-catkin/hector_nav_msgs/srv/GetSearchPosition.srv;/home/atv/atv-project-2017/catkin_ws/src/hector_slam-catkin/hector_nav_msgs/srv/GetNormal.srv")

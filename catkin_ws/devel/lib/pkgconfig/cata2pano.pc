@@ -1,0 +1,8 @@
+prefix=/home/atv/atv-project-2017/catkin_ws/devel
+
+Name: cata2pano
+Description: Description of cata2pano
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/atv/atv-project-2017/catkin_ws/devel/lib -lcata2pano
+Requires: image_transport roscpp sensor_msgs std_msgs cv_bridge

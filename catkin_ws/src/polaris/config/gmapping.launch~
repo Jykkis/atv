@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<launch>
+  <group ns="gmapping">
+    <remap from="scan" to="/lidar2scan/scan" />
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+      <param name="map_update_interval" value="1.5" />
+      <param name="maxUrange" value="20" />
+      <param name="maxRange" value="25" />
+      <param name="temporalUpdate" value="-1" />
+      <param name="linearUpdate" value="3.0" />
+      <param name="angularUpdate" value="0.3" />
+      <param name="particles" value="50" />
+      <param name="minimumScore" value="100" />
+      <param name="stt" value="0.01" />
+      <param name="srr" value="0.01" />
+      <param name="str" value="0.01" />
+      <param name="srt" value="0.01" />
+    </node>
+  </group>
+</launch>
